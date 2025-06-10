@@ -1,10 +1,11 @@
-const chai = require('chai');
+const chai = require ('chai');
 global.expect = chai.expect;
 
-const fs = require('fs');
-const path = require('path');
-const { JSDOM } = require('jsdom');
-const babel = require('@babel/core');
+const fs = require ('fs');
+const path = require ('path');
+const { JSDOM } = require ('jsdom');
+const babel = require ('@babel/core');
+
 
 // Load HTML content
 const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf-8');
